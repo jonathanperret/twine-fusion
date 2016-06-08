@@ -2,10 +2,18 @@
   "name": "twine-fusion",
   "version": "1.0.0",
   "description": "Merge Twine stories",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
-  "author": "Jonathan Perret <j@jonathanperret.net>",
-  "license": "ISC"
+  "bin": "cli.js",
+  "author": "Jonathan Perret <jonathan@ut7.fr>",
+  "repository": "https://github.com/ut7/twine-fusion",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.20.0"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^2.5.3"
+  }
 }
