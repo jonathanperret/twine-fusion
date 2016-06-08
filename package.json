@@ -1,0 +1,11 @@
+{
+  "name": "twine-fusion",
+  "version": "1.0.0",
+  "description": "Merge Twine stories",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Perret <j@jonathanperret.net>",
+  "license": "ISC"
+}
