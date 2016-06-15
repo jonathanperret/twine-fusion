@@ -26,4 +26,10 @@ describe("Fusion", function() {
       '</tw-storydata>'
     );
   });
+
+  it("throws if story data is not found", function() {
+    var sourceFile = __dirname + '/test-data/noStoryData.html';
+
+    expect(storydata.extractStoryData.bind(null, sourceFile)).to.throwException(/No tw-storydata element found/);
+  });
 });

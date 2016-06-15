@@ -6,6 +6,10 @@ exports.extractStoryData = function extractStoryData(file) {
   var parsedHTML = cheerio.load(htmlString);
   var data = parsedHTML.html('tw-storydata');
 
+  if(!data) {
+    throw new Error("No tw-storydata element found in " + file);
+  }
+
   return data;
 };
 
